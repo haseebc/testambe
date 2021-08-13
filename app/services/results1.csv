@@ -1,0 +1,4 @@
+"ClientNumber","FirstName","LastName","DNI","email","Result"
+"0001","Pablo","Rodriguez","Y2484209A","pablo@hey.com","Negative"
+"0002","Muhammed","Ali","G1234209A","muhammed@hey.com","Negative"
+"0003","Michael","Jackson","K3215511A","pablo@hey.com","Positive"
