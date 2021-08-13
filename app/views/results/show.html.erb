@@ -1,0 +1,14 @@
+<h1><%= @result.clientref %></h1>
+
+<p><%= @result.firstname %></p>
+
+<p><%= @result.lastname %></p>
+<p><%= @result.dni %></p>
+<p><%= @result.clientemail %></p>
+<p><%= @result.result %></p>
+<ul>
+  <li><%= link_to "Edit", edit_result_path(@result) %></li>
+<li><%= link_to "Destroy", result_path(@result),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+</ul>
