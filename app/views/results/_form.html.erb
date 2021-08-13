@@ -1,0 +1,54 @@
+
+<%= form_with model: result do |form| %>
+  <div>
+    <%= form.label :clientref %><br>
+    <%= form.text_field :clientref %>
+    <% result.errors.full_messages_for(:clientref).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :firstname %><br>
+    <%= form.text_area :firstname %>
+    <% result.errors.full_messages_for(:firstname).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+    <div>
+    <%= form.label :lastname %><br>
+    <%= form.text_area :lastname %>
+    <% result.errors.full_messages_for(:lastname).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+    </div>
+
+    <div>
+    <%= form.label :dni %><br>
+    <%= form.text_area :dni %>
+    <% result.errors.full_messages_for(:dni).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+    </div>
+
+    <div>
+    <%= form.label :clientemail %><br>
+    <%= form.text_area :clientemail %>
+    <% result.errors.full_messages_for(:clientemail).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+    </div>
+
+    <div>
+    <%= form.label :result %><br>
+    <%= form.text_area :result %>
+    <% result.errors.full_messages_for(:result).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+    </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
